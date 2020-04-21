@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<!-- <link rel="stylesheet" href="stylesheets/style.css"> -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+<link rel="stylesheet" type="text/css" href="mainStyling.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+         
+    body{
+       
+        padding:0;
+        margin:0;
+    }
+    
+    
+    
+    
+.card-custom {
+  overflow: hidden;
+  height: 180px;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+
+
+.card-custom-img {
+  height: 200px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: inherit;
+}
+
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+  position: absolute;
+  content: '';
+  top: 161px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 40px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 545px;
+  border-left-width: calc(405px - 5vw);
+  border-top-color:transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: inherit;
+}
+
+.card-custom-avatar{
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align:center;
+  color:white;
+  font-weight:bold;
+}
+    
+    
+    
+    
+    #nxt1BTN:hover{
+        transition: .3s all;
+        box-shadow:2px 5px 8px rgba(3, 99, 114, 0.7);
+    }
+    
+        #wryIMG{
+            margin-top:-65px;
+        }
+        .mystyle {
+           
+            background-color: transparent;
+            color: black;
+            font-size: 25px;
+            box-sizing: border-box;
+          }
+          #what-u-want{
+              width:100%;
+              display: none;
+              margin:.5% auto;
+              /*background-image: url("img/whatyou/BG.jpg");*/
+              height: 493px;
+          }
+          #hruId, #whtuId ,#whatLogin{
+              border-radius:50px;
+          }
+    
+          #whtyouIMG{
+            margin-top:-55px;
+            width:150px;
+        }
+        #whtyouDiv{
+            color:white;
+            margin-top:50px;
+        }
+        #whtyouBG{
+            margin-top:-50px;
+            width:97%;
+            position:absolute;
+        }
+        #whtyouHeading{
+            color:white; 
+            position:absolute; 
+            z-index:1;
+            margin-top:15%;
+            color:black;
+            margin-left:-2%;
+        }
+        #whtyouHeading > center > h1{
+            font-size:52px;
+            font-weight: bold;
+        }
+    
+    
+    #wLogin{
+        margin-top:-50px;
+        width:100%;
+        height: 402px;
+        display: none;
+       /* background-image: url("img/togetlogin/BG.jpg");*/
+    }
+   
+    #hruId, #whtuId, #whatLogin{
+        color:white;
+      }
+#tgLogImg{
+    margin-top:90px;
+}
+
+.loginModalOuter{
+    width:100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 99999;
+    top:0px;
+    left:0px;
+}
+#loginOuterId{
+    display:none;
+}
+#loginMadalInner{
+    width:35%;
+    height:auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    position: absolute;
+}
+#logDismis{
+    color:black; 
+    float:right; 
+    font-size:20px;
+    text-decoration:none; 
+    margin-right:10px;
+}
+#logDismis:hover{
+    color:red;
+}
+#logDiv1{
+margin-left:30px;
+}
+#logDiv2{
+display:none;
+margin-left:30px;
+}
+#logDiv3{
+display:none;
+margin-left:30px;
+}
+
+.poingLoginOuter{
+    animation: poping;
+}
+@-webkit-keyframes poping {
+    0% {
+        width:0%;
+        height:0vh;
+    }
+    90% {
+        width:70%;
+        height:70vh;
+    }
+    100% {
+        width:77%;
+        height:77vh;
+    }
+  }
+  
+  /* Standard syntax */
+  @keyframes poping {
+    0%   {background-color: red;}
+    90%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+
+
+
+/* SIGNIN MODAL STYLING */
+
+  .signModalOuter{
+    width:100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 99999;
+    top:0px;
+    left:0px;
+}
+#signOuterId{
+    display: none;
+}
+#signMadalInner{
+    width:70%;
+    height:auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(5, 73, 163, 0.904);
+    position: absolute;
+}
+#signDismis{
+    color:black; 
+    float:right; 
+    font-size:30px;
+    text-decoration:none; 
+    margin-right:10px;
+}
+#signDismis:hover{
+    color:red;
+}
+.poingsignOuter{
+    animation: poping;
+}
+@-webkit-keyframes poping {
+    0% {
+        width:0%;
+        height:0vh;
+    }
+    90% {
+        width:70%;
+        height:70vh;
+    }
+    100% {
+        width:77%;
+        height:77vh;
+    }
+  }
+  
+  /* Standard syntax */
+  @keyframes poping {
+    0%   {background-color: red;}
+    90%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  .logDiv11{
+        
+    animation-name: example;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+}
+@keyframes example {
+     0% {left:0px; opacity: 100;}
+    90% {left:-30px; opacity: 0;}
+   100% {display: none;}
+  }
+
+
+  .grd1,.lb1{
+    display:none;
+ }
+ #gradeLaber1,#gradeLaber2,#gradeLaber3,#gradeLaber4,#gradeLaber5,#gradeLaber6,#gradeLaber7,#gradeLaber8,#gradeLaber9
+ {
+     width:35px;
+     height:35px;
+     line-height:35px;
+     border:1px solid rgba(0, 0, 0, 0.5);
+     border-radius:50px;
+     text-align: center;
+     font-size:12px;
+     cursor: pointer;
+ }
+ #boardLbel1,#boardLbel2,#boardLbel3,
+ #boardLbel4,#boardLbel5
+ 
+ {
+     width:65px;
+     height:35px;
+     line-height:35px;
+     border:1px solid rgba(0, 0, 0, 0.5);
+     border-radius:50px;
+     text-align: center;
+     font-size:12px;
+     cursor: pointer;
+ }
+#loginH1Tag{
+    color:white;font-size:55px;font-weight:700;margin-top:100px;
+    margin-bottom:100px;
+}
+#loginH1Tag1{
+    color:white;font-size:55px;font-weight:700;;margin-top:150px;
+}
+ 
+ @media (max-width:480px){
+            #wryIMG{
+                margin-top:0px;
+            }
+            #hruId> center > h4, #whtuId> center > h4 ,#whatLogin > center > h4 {
+               
+                font-size: 15px;
+              }
+             
+    
+            #whtyouIMG{
+                margin-top:0px;
+                width:150px;
+            }
+            #whtyouDiv{
+                color:white;
+                margin-top:0px;
+            }
+            #whtyouBG{
+                width:91%;
+                position:absolute;
+            }
+            #whtyouHeading{
+                color:white; 
+                position:absolute; 
+                z-index:1;
+                margin-top:3%;
+                color:black;
+                margin-left:-5%;
+            }
+            #whtyouHeading > center > h1{
+                font-size:35px;
+                font-weight: bold;
+            }
+    
+    
+           
+            #log2{
+                width:80%;
+                margin:0 auto;
+                background-color: white;
+            }
+            
+            
+#loginH1Tag{
+    color:white;font-size:30px;font-weight:700;margin-bottom:50px;
+}        
+ #loginH1Tag1{
+    color:white;font-size:30px;font-weight:700;margin-bottom:-30px;
+}           
+ #tgLogImg{
+    margin-bottom:-50px;
+}           
+            
+            
+            
+        .loginModalOuter{
+            width:100%;
+            height:100vh;
+            background-color: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            z-index: 99999;
+            top:0px;
+            left:0px;
+        }
+        #loginOuterId{
+            display:none;
+        }
+        #loginMadalInner{
+            width:95%;
+            height:97vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:white;
+            position: absolute;
+            overflow: scroll;
+        }
+                
+      #logDiv1{
+        margin-left:60px;
+        }
+      #logDiv2{
+        display:none;
+        margin-left:60px;
+        }
+      #logDiv3{
+        display:none;
+        margin-left:0px;
+      }      
+      
+      
+      
+      
+           .card-custom {
+  overflow: hidden;
+  min-height: 200px;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+
+
+.card-custom-img {
+  height: 200px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: inherit;
+}
+.card-custom-img > h1{
+    font-size:25px;
+}
+
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+  position: absolute;
+  content: '';
+  top: 161px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 40px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 545px;
+  border-left-width: calc(405px - 5vw);
+  border-top-color:transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: inherit;
+}
+
+.card-custom-avatar{
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align:center;
+  color:white;
+  font-weight:bold;
+}
+            
+}
+
+
+
+</style>
+</head>
+<body>
+<section class="banner1">
+      
+<div class="row">
+    <div id="hruId"></div>
+    <div id="whtuId"></div>
+    <div id="whatLogin"></div>
+</div>
+
+
+
+<!--WHO YOU ARE SECTION-->
+<div id="who-r-u">
+    <center> <h1 id="loginH1Tag">WHO <span style="border-bottom:3px solid black">YOU</span> ARE</h1> </center>
+    
+    <div class="container">
+<div class="row navbar navbar-expand-lg">
+
+    <div class="col-lg-4" style="background-color:#1ab4ca; position:relative">
+
+          <div class="card" style="background-color:#1ab4ca; border:none; border-radius:0px; position:relative">
+              <div class="card-header" style="background-color: transparent">
+                  <img src="img/wryou/Student.png" alt="" srcset="" width="100%" id="wryIMG">
+              </div>
+
+              <div class="card-body" style="color:white">Study the international Courses, National Courses, State-level Courses with our top class professional for every subject having 10+ years experience.</div> 
+              
+              <div class="card-footer" style="background-color: transparent; position:relative">  
+                <center> 
+                    <a href="#" class="btn" style="background-color: white; font-weight:bold; border-radius:5px; width:150px; position:absolute; top:30%;left:30%;" onclick="nxt1()" id="nxt1BTN">
+                        GO
+                    </a> 
+                </center>
+                <br><br><br>
+              </div>
+          </div>
+
+    </div>
+
+
+    <div class="col-lg-4" style="background-color:#6149ac;">
+          <div class="card" style="background-color:#6149ac; border:none; border-radius:0px;">
+                  <div class="card-header" style="background-color: transparent">
+                      <img src="img/wryou/Teacher.png" alt="" srcset="" width="105%" id="wryIMG">
+                  </div>
+                  <div class="card-body" style="color:white">Are you bored with regular on time strict classes? Are you well experienced and looking for giving classes for short span of time? Then you are at right place.</div>
+                  <div class="card-footer" style="background-color: transparent; position:relative">
+                        <center> 
+                                <a href="#" class="btn" style="background-color: white; font-weight:bold; border-radius:5px; width:150px; position:absolute; top:30%;left:30%;" onclick="nxt1()" id="nxt1BTN">
+                                    GO
+                                </a> 
+                            </center>
+                            <br><br><br>
+                </div>
+              </div>
+    </div>
+      
+    <div class="col-lg-4" style="background-color:#2091d3">
+          <div class="card" style="background-color:#2091d3; border:none; border-radius:0px;">
+                  <div class="card-header" style="background-color: transparent">
+                      <img src="img/wryou/Parents.png" alt="" srcset="" width="95%" id="wryIMG">
+                  </div>
+                  <div class="card-body" style="color:white;">Do you have questions going on in your mind for your children? Are you not satisfied with your child studies? Then We are here to help you.</div>
+                  <div class="card-footer" style="background-color: transparent; position:relative">
+                        <center> 
+                                <a href="#" class="btn" style="background-color: white; font-weight:bold; border-radius:5px; width:150px; position:absolute; top:30%;left:30%;" onclick="nxt1()" id="nxt1BTN">
+                                    GO
+                                </a> 
+                            </center>
+                            <br><br><br>
+                        </div>
+              </div>
+    </div>
+
+  </div>
+ </div>
+</div>
+
+
+<!--WHAT YOU WANT SECTION-->
+<div id="what-u-want">
+        
+<center> <h1 id="loginH1Tag">WHAT <span style="border-bottom:3px solid black">YOU</span> WANT</h1> </center>
+<div class="container">
+
+
+ 
+<div class="row navbar navbar-expand-lg">
+  
+              <div class="col-lg-4" style="background-color:#1ab4ca;position:relative;" id="whtyouDiv">
+                    <div class="card" style="background-color:#1ab4ca; border:none; border-radius:0px;">
+                        <div class="card-header" style="background-color: transparent;">
+                           <center> <img src="img/whatyou/doubt.png" alt="" srcset="" width="100%" id="whtyouIMG">
+                           <h5>QUESTION & ANSWERS</h5>
+                           </center>
+                        </div>
+                        <div class="card-body" style="color:white">Questions & Answers - Ask questions from our experts and resolve your queries. 50 plus faculty registered to solve your queries as soon as posibble. Feel free to post your doubts.</div> 
+                        <div class="card-footer" style="background-color: transparent; position:relative">
+                         <br>  <center> 
+                            <a href="#" class="btn" style="background-color: white; border-radius:5px; width:150px; font-weight:bold;" onclick="loginMe()" id="nxt1BTN">GO</a> 
+                           </center>
+                            <br>
+                        </div>
+                    </div>
+              </div>
+        
+              <div class="col-lg-4" style="background-color:#6149ac;position:relative;" id="whtyouDiv">
+                    <div class="card" style="background-color:#6149ac; border:none; border-radius:0px;">
+                            <div class="card-header" style="background-color: transparent">
+                                <center> <img src="img/whatyou/Study.png" alt="" srcset="" width="105%" id="whtyouIMG">
+                                 <h5>STUDY MATERIALS</h5>
+                                </center>
+                            </div>
+                            <div class="card-body" style="color:white">Study Materials - Past papers, Sample papers, previous year questions, chapterwise questions and Free resources using this analyse yourself and contribute for it.</div>
+                            <div class="card-footer" style="background-color: transparent">
+                                  <br>  <center> <a href="#" class="btn" style="background-color: white; border-radius:5px; width:150px; font-weight:bold;" onclick="loginMe()" id="nxt1BTN">GO</a> </center>
+                           <br>  </div>
+                        </div>
+              </div>
+                
+              <div class="col-lg-4" style="background-color:#2091d3;position:relative;" id="whtyouDiv">
+                    <div class="card" style="background-color:#2091d3; border:none; border-radius:0px;">
+                            <div class="card-header" style="background-color: transparent">
+                                <center><img src="img/whatyou/online.png" alt="" srcset="" width="95%" id="whtyouIMG">
+                                <h5>LIVE COURSES</h5>
+                                </center>
+                            </div>
+                            <div class="card-body" style="color:white;">Live Courses - To clear your doubts topicwise, subjectwise, to know the strategy better of different subjects or to know the labellings of the diagrams. Study with us our live classes.</div>
+                            <div class="card-footer" style="background-color: transparent">
+                                 <br>  <center> <a href="#" class="btn" style="background-color: white; border-radius:5px; width:150px; font-weight:bold;" onclick="loginMe()" id="nxt1BTN">GO</a> </center>
+                            <br></div>
+                        </div>
+              </div>
+        
+</div>
+ 
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--WHO & WHAT YOU LOGIN SECTION-->
+<div id="wLogin">
+        <center> 
+                <h1 id="loginH1Tag1">
+                        SELECT<span style="border-bottom:3px solid black"> THE </span>CATEGORY
+                    </h1> 
+        </center>
+        <div class="container">
+            <br><br><br><br>
+            <div class="row navbar navbar-expand-lg">
+
+                <div class="col-lg-3">
+                   <a href="#"  onclick="loginMe('Time-Table')"> 
+                       <center>
+                        <!--<img src="img/togetlogin/m1.png" alt="" srcset="" width="90%" id="tgLogImg">-->
+                        <h1>PAST PAPER</h1>
+                    </center>
+                </a>
+            </div> 
+            <div class="col-lg-3">
+               <a href="#"  onclick="loginMe('Time-Table')"> 
+                  <center>
+                    <!--<img src="img/togetlogin/m2.png" alt="" srcset="" width="90%" id="tgLogImg">-->
+                    <h1>E-BOOKS</h1>
+                </center> 
+            </a>
+        </div> 
+        <div class="col-lg-3">
+           <a href="#"  onclick="loginMe('Time-Table')">  
+            <center>
+                <!--<img src="img/togetlogin/m3.png" alt="" srcset="" width="90%" id="tgLogImg">-->
+                <h1>SAMPLE PAPER</h1>
+            </center> 
+        </a>
+    </div> 
+    <div class="col-lg-3">
+        <a href="#"  onclick="loginMe('Time-Table')"> 
+            <center>
+                <!--<img src="img/togetlogin/m4.png" alt="" srcset="" width="90%" id="tgLogImg"> -->
+                <h1>FORMULAE BOOKS</h1>
+            </center>
+        </a>
+    </div> 
+
+</div>
+
+
+
+
+<div class="row navbar navbar-expand-lg">
+
+                <div class="col-lg-3">
+                   <a href="#"  onclick="loginMe('Time-Table')"> 
+                       <center>
+                        <!--<img src="img/togetlogin/m1.png" alt="" srcset="" width="90%" id="tgLogImg">-->
+                        <h1>PAST PAPER</h1>
+                    </center>
+                </a>
+            </div> 
+            <div class="col-lg-3">
+               <a href="#"  onclick="loginMe('Time-Table')"> 
+                  <center>
+                    <!--<img src="img/togetlogin/m2.png" alt="" srcset="" width="90%" id="tgLogImg">-->
+                    <h1>E-BOOKS</h1>
+                </center> 
+            </a>
+        </div> 
+        <div class="col-lg-3">
+           <a href="#"  onclick="loginMe('Time-Table')">  
+            <center>
+                <!--<img src="img/togetlogin/m3.png" alt="" srcset="" width="90%" id="tgLogImg">-->
+                <h1>SAMPLE PAPER</h1>
+            </center> 
+        </a>
+    </div> 
+    <div class="col-lg-3">
+        <a href="#"  onclick="loginMe('Time-Table')"> 
+            <center>
+                <!--<img src="img/togetlogin/m4.png" alt="" srcset="" width="90%" id="tgLogImg"> -->
+                <h1>FORMULAE BOOKS</h1>
+            </center>
+        </a>
+    </div> 
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!--MODAL FOR LOGIN STARTS FROM HERE-->
+<<div class="loginModalOuter" id="loginOuterId">
+  <div id="loginMadalInner">
+    <span>
+       <a href="#" id="logDismis" onclick="dismisloginMe()">
+         <i class="fa fa-times" aria-hidden="true"></i>
+       </a>
+     </span><br>
+    <div class="row">
+	  <div class="" id="completeHide">
+      </div>
+	  <!--LOGIN DIV STARTS FROM HERE-->
+      <div class="col-lg-12" id="logDiv1"> 
+        
+          <div class="">
+            <center><img src="img/loginlogo.png" alt=""></center>
+          </div><br>
+          <div>
+            <h4><center>LOGIN HERE</center></h4>
+          </div>
+
+          <form action="dashboard/index.html">
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="border-radius:0px;height:50px;" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="border-radius:0px;height:50px;" required>
+            </div>
+            <center> 
+				<button type="submit" class="btn btn-primary btn-block" style="border-radius:0px;height:50px;" id="nxt1BTN">
+				   LOGIIN
+				</button>
+			</center>
+          </form>
+          <br>
+          <center>
+		    Create an account?
+			<a href="#" class="" style="text-decoration:none;" onclick="signinMe1()" >
+			Sign up
+			</a>
+		  </center><br><br>
+      </div>
+	  <!--LOGIN DIV ENDS FROM HERE-->
+
+  <div class="col-lg-12" id="logDiv2"> 
+      <div>
+       <center><img src="img/loginlogo.png" alt=""></center>
+      </div><br>
+	  <div>
+	    <h4><center>REGISTER HERE</center></h4>   
+	  </div>
+    
+      <form action="#">
+		<div class="form-group">
+			<input type="text" class="form-control" id="exampleInputName2" aria-describedby="nameHelp" placeholder="Enter name" style="border-radius:0px;height:50px;" required>
+		</div>
+		<div class="form-group">
+		 <input type="text" class="form-control" id="exampleInputMobile2" aria-describedby="mobileHelp" placeholder="Enter mobile no" style="border-radius:0px;height:50px;" required>
+	    </div>
+	    <div class="form-group">
+	     <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email" style="border-radius:0px;height:50px;" required>
+	    </div>
+		<div class="form-group">
+		  <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" style="border-radius:0px;height:50px;" required>
+		</div>
+		<center> <a href="#" class="btn btn-primary btn-block" style="border-radius:0px;height:50px;line-height:35px;" id="nxt1BTN" onclick="signMe2()">SIGNUP</a></center>
+		<br>
+		</form>
+		<center> Already registered?<a href="#" class="" style="text-decoration:none;" onclick="loginMe1()" > Sign in</a></center><br>
+</div>
+
+
+
+
+
+<div class="col-lg-12" id="logDiv3"> 
+  <div class="">
+    <center><img src="img/loginlogo.png" alt=""></center>
+  </div>
+  <br>
+  <div>
+   <h4><center>ONE LAST STEP</center></h4>
+  </div> 
+  <div class="row">
+    <div class="col-lg-12">
+	<form action="dashboard/index.html">
+      <table class="table table-responsive" id="grdTbl">
+            <tr>
+                <td>Select Your Grade</td>
+                <td>
+                    <label for="5th" id="gradeLaber1" onclick="grdFun('gradeLaber1')">5th</label>
+                    <input type="radio" class="grd1" name="grade" id="5th">
+                    <label for="6th" id="gradeLaber2" onclick="grdFun('gradeLaber2')">6th</label>
+                    <input type="radio" class="grd1" name="grade" id="6th">
+
+                    <label for="7th" id="gradeLaber3" onclick="grdFun('gradeLaber3')">7th</label>
+                    <input type="radio" class="grd1" name="grade" id="7th">
+
+                    <label for="8th" id="gradeLaber4" onclick="grdFun('gradeLaber4')">8th</label>
+                    <input type="radio" class="grd1" name="grade" id="8th">
+
+                    <label for="9th" id="gradeLaber5" onclick="grdFun('gradeLaber5')">9th</label>
+                    <input type="radio" class="grd1" name="grade" id="9th">
+
+                    <label for="10th" id="gradeLaber6" onclick="grdFun('gradeLaber6')">10th</label>
+                    <input type="radio" class="grd1" name="grade" id="10th">
+
+                    <label for="11th" id="gradeLaber7" onclick="grdFun('gradeLaber7')">11th</label>
+                    <input type="radio" class="grd1" name="grade" id="11th">
+
+                    <label for="12th" id="gradeLaber8" onclick="grdFun('gradeLaber8')">12th</label>
+                    <input type="radio" class="grd1" name="grade" id="12th">
+
+                    <label for="13th" id="gradeLaber9" onclick="grdFun('gradeLaber9')">13th</label>
+                    <input type="radio" class="grd1" name="grade" id="13th">
+                </td>
+            </tr>
+            <tr>
+               <td>Select Your Board</td>
+               <td>
+                <label for="lbl1" id="boardLbel1" onclick="boardFun('boardLbel1')">CBSE</label>
+                <input type="radio" class="lb1" name="grade" id="lbl1">
+
+                <label for="lbl2" id="boardLbel2" onclick="boardFun('boardLbel2')">ICSE</label>
+                <input type="radio" class="lb1" name="grade" id="lbl2">
+
+                <label for="lbl3" id="boardLbel3" onclick="boardFun('boardLbel3')">State Board</label>
+                <input type="radio" class="lb1" name="grade" id="lbl3">
+
+                <label for="lbl4" id="boardLbel4" onclick="boardFun('boardLbel4')">IGCSE</label>
+                <input type="radio" class="lb1" name="grade" id="lbl4">
+
+                <label for="lbl5" id="boardLbel5" onclick="boardFun('boardLbel5')">IB</label>
+                <input type="radio" class="lb1" name="grade" id="lbl5">
+            </td>
+        </tr>
+
+        <tr>
+           <td>Enter yor City</td>
+           <td>
+            <div class="form-group">
+                <input type="twxt" class="form-control" id="exampleInputCity1" aria-describedby="emailHelp" placeholder="Enter city" style="border-radius:0px;height:50px;" required>
+            </div>
+           </td>
+        </tr>  
+        
+        <tr>
+            <td colspan=2>
+                <center>  <button type="submit" class="btn btn-primary btn-block" style="border-radius:0px;height:50px;" id="nxt1BTN">COMPLETE</button> </center>
+            </td>
+        </tr>
+      </table>
+      </form>
+    </div>
+    
+   </div>
+   
+   <br>
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+                    
+</section>
+
+ 
+
+<script src="script.js"></script>
+
+
+<script>
+    function nxt1() {
+        var hruId = document.getElementById("hruId");
+        var whtuId = document.getElementById("whtuId");
+        var whatLogin = document.getElementById("whatLogin");
+     
+        whtuId.classList.add("mystyle");
+        hruId.classList.remove("mystyle");
+        whatLogin.classList.remove("mystyle");
+        
+        whtuId.style.color = "black";
+        hruId.style.color = "white";
+        whatLogin.style.color = "white";
+
+        var element = document.getElementById("who-r-u").style.display = "none";
+        var element = document.getElementById("what-u-want").style.display = "block";
+        var element = document.getElementById("wLogin").style.display = "none";
+          
+      
+    }
+</script>
+<script>
+    function nxt2() {
+        var hruId = document.getElementById("hruId");
+        var whtuId = document.getElementById("whtuId");
+        var whatLogin = document.getElementById("whatLogin");
+ 
+        hruId.classList.remove("mystyle");
+        whtuId.classList.remove("mystyle");
+        whatLogin.classList.add("mystyle");
+       
+
+        whtuId.style.color = "white";
+        hruId.style.color = "white";
+        whatLogin.style.color = "black";
+
+        var element = document.getElementById("who-r-u").style.display = "none";
+        var element = document.getElementById("what-u-want").style.display = "none";
+        var element = document.getElementById("wLogin").style.display = "block";
+
+     }
+    </script>
+
+    <script>
+     function pree1() {
+        var hruId = document.getElementById("hruId");
+        var whtuId = document.getElementById("whtuId");
+        var whatLogin = document.getElementById("whatLogin");
+ 
+        hruId.classList.add("mystyle");
+        whtuId.classList.remove("mystyle");
+        whatLogin.classList.remove("mystyle");
+       
+
+        whtuId.style.color = "white";
+        hruId.style.color = "black";
+        whatLogin.style.color = "white";
+
+        var element = document.getElementById("who-r-u").style.display = "block";
+        var element = document.getElementById("what-u-want").style.display = "none";
+        var element = document.getElementById("wLogin").style.display = "none";
+          
+       
+     }
+    </script>
+
+
+
+    <script>
+     function pree2() {
+        var hruId = document.getElementById("hruId");
+        var whtuId = document.getElementById("whtuId");
+        var whatLogin = document.getElementById("whatLogin");
+ 
+        hruId.classList.remove("mystyle");
+        whtuId.classList.add("mystyle");
+        whatLogin.classList.remove("mystyle");
+
+        whtuId.style.color = "black";
+        hruId.style.color = "white";
+        whatLogin.style.color = "white";
+
+        var element = document.getElementById("who-r-u").style.display = "none";
+        var element = document.getElementById("what-u-want").style.display = "block";
+        var element = document.getElementById("wLogin").style.display = "none";
+          
+       
+     }
+
+
+</script>
+
+<script>
+        $('#exampleModal1').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title1').text(recipient)
+            //modal.find('.modal-body input').val(recipient)
+          })
+</script>
+
+<script>
+    window.addEventListener('load', 
+  function() { 
+    var hruId = document.getElementById("hruId");
+ 
+    hruId.classList.add("mystyle");
+
+        var whtuId = document.getElementById("whtuId");
+        var whatLogin = document.getElementById("whatLogin");
+     
+        
+        whtuId.classList.remove("mystyle");
+        whatLogin.classList.remove("mystyle");
+        
+        whtuId.style.color = "white";
+        hruId.style.color = "black";
+        whatLogin.style.color = "white";
+  }, false);
+</script>
+
+<!--LIGIN MODAL SCRIPT-->
+<script>
+    function loginMe(type){
+        var poping = document.getElementById("loginOuterId");
+        poping.classList.add("poingLoginOuter");
+
+        var element = document.getElementById('loginOuterId').style.display = "block";
+    }
+</script>
+<script>
+    function dismisloginMe(type){
+        var element = document.getElementById('loginOuterId').style.display = "none";
+    }
+</script>
+
+<script>
+        function signinMe1(type){
+           
+            var signPoping = document.getElementById("logDiv1");
+
+            signPoping.classList.add("logDiv11");
+            
+            var element = document.getElementById('logDiv1').style.display = "none";
+            var element = document.getElementById('logDiv2').style.display = "block";
+            var element = document.getElementById('logDiv3').style.display = "none";
+        }
+</script>
+
+<script>
+  function signMe2(type){
+            var exampleInputName2 = document.getElementById('exampleInputName2').value;
+            var exampleInputMobile2 = document.getElementById('exampleInputMobile2').value;
+            var exampleInputEmail2 = document.getElementById('exampleInputEmail2').value;
+            var exampleInputPassword2 = document.getElementById('exampleInputPassword2').value;
+            
+            
+            
+           
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+           
+        
+            if(exampleInputName2 == ""){
+                alert("Please enter name");
+            }else if(exampleInputMobile2 == ""){
+                 alert("Please enter mobile no");
+            }else if (reg.test(exampleInputEmail2) == false) 
+            {
+                alert('Invalid Email Address');
+                return false;
+            }else if(exampleInputPassword2 == ""){
+                 alert("Please enter password");
+            }
+            else{
+                 var signPoping = document.getElementById("logDiv3");
+            
+                 signPoping.classList.add("logDiv11");
+                        
+                 var element = document.getElementById('completeHide').style.display = "none";
+                 var element = document.getElementById('logDiv1').style.display = "none";
+                 var element = document.getElementById('logDiv2').style.display = "none";
+                 var element = document.getElementById('logDiv3').style.display = "block";
+            }
+            return true; 
+           
+  }
+</script>
+
+
+<script>
+        function loginMe1(type){
+           
+            var signPoping = document.getElementById("logDiv2");
+
+            signPoping.classList.add("logDiv11");
+            var element = document.getElementById('logDiv1').style.display = "block";
+            var element = document.getElementById('logDiv2').style.display = "none";
+            var element = document.getElementById('logDiv3').style.display = "none";
+        }
+</script>
+
+<!--SIGNIN MODAL SCRIPT-->
+<script>
+        function signinMe(type){
+            var signPoping = document.getElementById("signOuterId");
+            signPoping.classList.add("poingLoginOuter");
+    
+            var element = document.getElementById('signOuterId').style.display = "block";
+        }
+    </script>
+    <script>
+        function dismissignMe(type){
+            var element = document.getElementById('signOuterId').style.display = "none";
+        }
+    </script>
+
+    <script>
+        function grdFun(val){
+
+            var val1 = "gradeLaber1";
+            var val2 = "gradeLaber2";
+            var val3 = "gradeLaber3";
+            var val4 = "gradeLaber4";
+            var val5 = "gradeLaber5";
+            var val6 = "gradeLaber6";
+            var val7 = "gradeLaber7";
+            var val8 = "gradeLaber8";
+            var val9 = "gradeLaber9";
+           
+            if(val == "gradeLaber1")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val1).style.color = "#ffffff";
+                var em = document.getElementById(val2).style.backgroundColor = "white";
+                var em = document.getElementById(val2).style.color = "#000000";
+                var em = document.getElementById(val3).style.backgroundColor = "white";
+                var em = document.getElementById(val3).style.color = "#000000";
+                var em = document.getElementById(val4).style.backgroundColor = "white";
+                var em = document.getElementById(val4).style.color = "#000000";
+                var em = document.getElementById(val5).style.backgroundColor = "white";
+                var em = document.getElementById(val5).style.color = "#000000";
+                var em = document.getElementById(val6).style.backgroundColor = "white";
+                var em = document.getElementById(val6).style.color = "#000000";
+                var em = document.getElementById(val7).style.backgroundColor = "white";
+                var em = document.getElementById(val7).style.color = "#000000";
+                var em = document.getElementById(val8).style.backgroundColor = "white";
+                var em = document.getElementById(val8).style.color = "#000000";
+                var em = document.getElementById(val9).style.backgroundColor = "white";
+                var em = document.getElementById(val9).style.color = "#000000";
+            }
+            if(val == "gradeLaber2")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "white";
+                var em = document.getElementById(val1).style.color = "#000000";
+                var em = document.getElementById(val2).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val2).style.color = "white";
+                var em = document.getElementById(val3).style.backgroundColor = "white";
+                var em = document.getElementById(val3).style.color = "black";
+                var em = document.getElementById(val4).style.backgroundColor = "white";
+                var em = document.getElementById(val4).style.color = "#000000";
+                var em = document.getElementById(val5).style.backgroundColor = "white";
+                var em = document.getElementById(val5).style.color = "#000000";
+                var em = document.getElementById(val6).style.backgroundColor = "white";
+                var em = document.getElementById(val6).style.color = "#000000";
+                var em = document.getElementById(val7).style.backgroundColor = "white";
+                var em = document.getElementById(val7).style.color = "#000000";
+                var em = document.getElementById(val8).style.backgroundColor = "white";
+                var em = document.getElementById(val8).style.color = "#000000";
+                var em = document.getElementById(val9).style.backgroundColor = "white";
+                var em = document.getElementById(val9).style.color = "#000000";
+            }
+            if(val == "gradeLaber3")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "white";
+                var em = document.getElementById(val1).style.color = "#000000";
+                var em = document.getElementById(val2).style.backgroundColor = "white";
+                var em = document.getElementById(val2).style.color = "#000000";
+                var em = document.getElementById(val3).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val3).style.color = "#ffffff";
+                var em = document.getElementById(val4).style.backgroundColor = "white";
+                var em = document.getElementById(val4).style.color = "#000000";
+                var em = document.getElementById(val5).style.backgroundColor = "white";
+                var em = document.getElementById(val5).style.color = "#000000";
+                var em = document.getElementById(val6).style.backgroundColor = "white";
+                var em = document.getElementById(val6).style.color = "#000000";
+                var em = document.getElementById(val7).style.backgroundColor = "white";
+                var em = document.getElementById(val7).style.color = "#000000";
+                var em = document.getElementById(val8).style.backgroundColor = "white";
+                var em = document.getElementById(val8).style.color = "#000000";
+                var em = document.getElementById(val9).style.backgroundColor = "white";
+                var em = document.getElementById(val9).style.color = "#000000";
+            }
+            if(val == "gradeLaber4")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "white";
+                var em = document.getElementById(val1).style.color = "#000000";
+                var em = document.getElementById(val2).style.backgroundColor = "white";
+                var em = document.getElementById(val2).style.color = "#000000";
+                var em = document.getElementById(val3).style.backgroundColor = "white";
+                var em = document.getElementById(val3).style.color = "#000000";
+                var em = document.getElementById(val4).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val4).style.color = "#ffffff";
+                var em = document.getElementById(val5).style.backgroundColor = "white";
+                var em = document.getElementById(val5).style.color = "#000000";
+                var em = document.getElementById(val6).style.backgroundColor = "white";
+                var em = document.getElementById(val6).style.color = "#000000";
+                var em = document.getElementById(val7).style.backgroundColor = "white";
+                var em = document.getElementById(val7).style.color = "#000000";
+                var em = document.getElementById(val8).style.backgroundColor = "white";
+                var em = document.getElementById(val8).style.color = "#000000";
+                var em = document.getElementById(val9).style.backgroundColor = "white";
+                var em = document.getElementById(val9).style.color = "#000000";
+            }
+            if(val == "gradeLaber5")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "white";
+                var em = document.getElementById(val1).style.color = "#000000";
+                var em = document.getElementById(val2).style.backgroundColor = "white";
+                var em = document.getElementById(val2).style.color = "#000000";
+                var em = document.getElementById(val3).style.backgroundColor = "white";
+                var em = document.getElementById(val3).style.color = "#000000";
+                var em = document.getElementById(val4).style.backgroundColor = "white";
+                var em = document.getElementById(val4).style.color = "#000000";
+                var em = document.getElementById(val5).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val5).style.color = "#ffffff";
+                var em = document.getElementById(val6).style.backgroundColor = "white";
+                var em = document.getElementById(val6).style.color = "#000000";
+                var em = document.getElementById(val7).style.backgroundColor = "white";
+                var em = document.getElementById(val7).style.color = "#000000";
+                var em = document.getElementById(val8).style.backgroundColor = "white";
+                var em = document.getElementById(val8).style.color = "#000000";
+                var em = document.getElementById(val9).style.backgroundColor = "white";
+                var em = document.getElementById(val9).style.color = "#000000";
+            }
+            if(val == "gradeLaber6")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "white";
+                var em = document.getElementById(val1).style.color = "#000000";
+                var em = document.getElementById(val2).style.backgroundColor = "white";
+                var em = document.getElementById(val2).style.color = "#000000";
+                var em = document.getElementById(val3).style.backgroundColor = "white";
+                var em = document.getElementById(val3).style.color = "#000000";
+                var em = document.getElementById(val4).style.backgroundColor = "white";
+                var em = document.getElementById(val4).style.color = "#000000";
+                var em = document.getElementById(val5).style.backgroundColor = "white";
+                var em = document.getElementById(val5).style.color = "#000000";
+                var em = document.getElementById(val6).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val6).style.color = "#ffffff";
+                var em = document.getElementById(val7).style.backgroundColor = "white";
+                var em = document.getElementById(val7).style.color = "#000000";
+                var em = document.getElementById(val8).style.backgroundColor = "white";
+                var em = document.getElementById(val8).style.color = "#000000";
+                var em = document.getElementById(val9).style.backgroundColor = "white";
+                var em = document.getElementById(val9).style.color = "#000000";
+            }
+            if(val == "gradeLaber7")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "white";
+                var em = document.getElementById(val1).style.color = "#000000";
+                var em = document.getElementById(val2).style.backgroundColor = "white";
+                var em = document.getElementById(val2).style.color = "#000000";
+                var em = document.getElementById(val3).style.backgroundColor = "white";
+                var em = document.getElementById(val3).style.color = "#000000";
+                var em = document.getElementById(val4).style.backgroundColor = "white";
+                var em = document.getElementById(val4).style.color = "#000000";
+                var em = document.getElementById(val5).style.backgroundColor = "white";
+                var em = document.getElementById(val5).style.color = "#000000";
+                var em = document.getElementById(val6).style.backgroundColor = "white";
+                var em = document.getElementById(val6).style.color = "#000000";
+                var em = document.getElementById(val7).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val7).style.color = "#ffffff";
+                var em = document.getElementById(val8).style.backgroundColor = "white";
+                var em = document.getElementById(val8).style.color = "#000000";
+                var em = document.getElementById(val9).style.backgroundColor = "white";
+                var em = document.getElementById(val9).style.color = "#000000";
+            }
+            if(val == "gradeLaber8")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "white";
+                var em = document.getElementById(val1).style.color = "#000000";
+                var em = document.getElementById(val2).style.backgroundColor = "white";
+                var em = document.getElementById(val2).style.color = "#000000";
+                var em = document.getElementById(val3).style.backgroundColor = "white";
+                var em = document.getElementById(val3).style.color = "#000000";
+                var em = document.getElementById(val4).style.backgroundColor = "white";
+                var em = document.getElementById(val4).style.color = "#000000";
+                var em = document.getElementById(val5).style.backgroundColor = "white";
+                var em = document.getElementById(val5).style.color = "#000000";
+                var em = document.getElementById(val6).style.backgroundColor = "white";
+                var em = document.getElementById(val6).style.color = "#000000";
+                var em = document.getElementById(val7).style.backgroundColor = "white";
+                var em = document.getElementById(val7).style.color = "#000000";
+                var em = document.getElementById(val8).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val8).style.color = "#ffffff";
+                var em = document.getElementById(val9).style.backgroundColor = "white";
+                var em = document.getElementById(val9).style.color = "#000000";
+            }
+            if(val == "gradeLaber9")
+            {
+                var em = document.getElementById(val1).style.backgroundColor = "white";
+                var em = document.getElementById(val1).style.color = "#000000";
+                var em = document.getElementById(val2).style.backgroundColor = "white";
+                var em = document.getElementById(val2).style.color = "#000000";
+                var em = document.getElementById(val3).style.backgroundColor = "white";
+                var em = document.getElementById(val3).style.color = "#000000";
+                var em = document.getElementById(val4).style.backgroundColor = "white";
+                var em = document.getElementById(val4).style.color = "#000000";
+                var em = document.getElementById(val5).style.backgroundColor = "white";
+                var em = document.getElementById(val5).style.color = "#000000";
+                var em = document.getElementById(val6).style.backgroundColor = "white";
+                var em = document.getElementById(val6).style.color = "#000000";
+                var em = document.getElementById(val7).style.backgroundColor = "white";
+                var em = document.getElementById(val7).style.color = "#000000";
+                var em = document.getElementById(val8).style.backgroundColor = "white";
+                var em = document.getElementById(val8).style.color = "#000000";
+                var em = document.getElementById(val9).style.backgroundColor = "#369CD9";
+                var em = document.getElementById(val9).style.color = "#ffffff";
+            }
+           
+        }
+    </script>
+
+
+    <script>
+            function boardFun(val){
+    
+                var val1 = "boardLbel1";
+                var val2 = "boardLbel2";
+                var val3 = "boardLbel3";
+                var val4 = "boardLbel4";
+                var val5 = "boardLbel5";
+               
+                if(val == "boardLbel1")
+                {
+                    var em = document.getElementById(val1).style.backgroundColor = "#369CD9";
+                    var em = document.getElementById(val1).style.color = "#ffffff";
+                    var em = document.getElementById(val2).style.backgroundColor = "white";
+                    var em = document.getElementById(val2).style.color = "#000000";
+                    var em = document.getElementById(val3).style.backgroundColor = "white";
+                    var em = document.getElementById(val3).style.color = "#000000";
+                    var em = document.getElementById(val4).style.backgroundColor = "white";
+                    var em = document.getElementById(val4).style.color = "#000000";
+                    var em = document.getElementById(val5).style.backgroundColor = "white";
+                    var em = document.getElementById(val5).style.color = "#000000";
+                }
+                if(val == "boardLbel2")
+                {
+                    var em = document.getElementById(val1).style.backgroundColor = "white";
+                    var em = document.getElementById(val1).style.color = "#000000";
+                    var em = document.getElementById(val2).style.backgroundColor = "#369CD9";
+                    var em = document.getElementById(val2).style.color = "#ffffff";
+                    var em = document.getElementById(val3).style.backgroundColor = "white";
+                    var em = document.getElementById(val3).style.color = "#000000";
+                    var em = document.getElementById(val4).style.backgroundColor = "white";
+                    var em = document.getElementById(val4).style.color = "#000000";
+                    var em = document.getElementById(val5).style.backgroundColor = "white";
+                    var em = document.getElementById(val5).style.color = "#000000";
+                }
+                if(val == "boardLbel3")
+                {
+                    var em = document.getElementById(val1).style.backgroundColor = "white";
+                    var em = document.getElementById(val1).style.color = "#000000";
+                    var em = document.getElementById(val2).style.backgroundColor = "white";
+                    var em = document.getElementById(val2).style.color = "#000000";
+                    var em = document.getElementById(val3).style.backgroundColor = "#369CD9";
+                    var em = document.getElementById(val3).style.color = "#ffffff";
+                    var em = document.getElementById(val4).style.backgroundColor = "white";
+                    var em = document.getElementById(val4).style.color = "#000000";
+                    var em = document.getElementById(val5).style.backgroundColor = "white";
+                    var em = document.getElementById(val5).style.color = "#000000";
+                }
+                if(val == "boardLbel4")
+                {
+                    var em = document.getElementById(val1).style.backgroundColor = "white";
+                    var em = document.getElementById(val1).style.color = "#000000";
+                    var em = document.getElementById(val2).style.backgroundColor = "white";
+                    var em = document.getElementById(val2).style.color = "#000000";
+                    var em = document.getElementById(val3).style.backgroundColor = "white";
+                    var em = document.getElementById(val3).style.color = "#000000";
+                    var em = document.getElementById(val4).style.backgroundColor = "#369CD9";
+                    var em = document.getElementById(val4).style.color = "#ffffff";
+                    var em = document.getElementById(val5).style.backgroundColor = "white";
+                    var em = document.getElementById(val5).style.color = "#000000";
+                }
+                if(val == "boardLbel5")
+                {
+                    var em = document.getElementById(val1).style.backgroundColor = "white";
+                    var em = document.getElementById(val1).style.color = "#000000";
+                    var em = document.getElementById(val2).style.backgroundColor = "white";
+                    var em = document.getElementById(val2).style.color = "#000000";
+                    var em = document.getElementById(val3).style.backgroundColor = "white";
+                    var em = document.getElementById(val3).style.color = "#000000";
+                    var em = document.getElementById(val4).style.backgroundColor = "white";
+                    var em = document.getElementById(val4).style.color = "#000000";
+                    var em = document.getElementById(val5).style.backgroundColor = "#369CD9";
+                    var em = document.getElementById(val5).style.color = "#ffffff";
+                }
+            }
+            </script>
+
+</body>
+</html>

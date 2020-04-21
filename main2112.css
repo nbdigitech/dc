@@ -1,0 +1,393 @@
+/* @@@@@  BANNER SECTION STARTS  (FIRST SECTION) @@@@@ */
+.banner{
+    width:100%;
+    height: 700px;
+    background-image: url("img/Banner.jpg");
+}
+.banner1{
+    width:100%;
+    height: 400px;
+    background-image: url("img/Banner.jpg");
+}
+.btnInfo{
+    background-color:white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:5px;
+    width:180px;
+    height:30px;
+    margin-top:6px;
+    line-height:15px;
+     
+    font-size:13px; 
+    font-weight:bold;
+}
+#hrColor{
+	 border:1px solid#cccccc;
+	 width:155%;
+}
+#nave_li_a_color li a {
+    color:white;
+} 
+
+/*#nave_li_a_color{
+	position: fixed;
+    margin-left:55%;
+    margin-top:8.6%;
+}*/
+#FirstSectionRowP{
+    color:cornsilk; 
+    font-size: 38px; 
+    font-weight:450; 
+    letter-spacing: 3px; 
+    margin-bottom:-15px;
+}
+
+#FirstSectionRowP1{
+     color:cornsilk; 
+     font-size:16px;
+}
+
+#Button2{
+margin-top:16px;
+}
+
+.navbar-toggler{
+    background-color: #F0F3F4;
+}
+
+/* @@@@@  (SECOND SECTION STARTS) @@@@@ */
+
+.SecondSection{
+	width:100%;
+	height:auto;
+	background-color: #F0F3F4;
+}
+
+
+/* @@@@@  (THIRD SECTION STARTS) @@@@@ */
+.ThirdSection{
+    width:100%;
+	height:auto;
+	line-height:75px;
+    background-color: #E5E9EE;
+}
+
+/* @@@@@  (FORTH SECTION STARTS) @@@@@ */
+.ForthSection{
+    width:100%;
+	height:auto;
+}
+
+
+/* @@@@@  (FIFTH SECTION STARTS) @@@@@ */
+.FifthSection{
+    width:100%;
+    height:auto;
+    background-image: url("img/images/Graphics-Left.jpg");
+    background-repeat: no-repeat; 
+}
+
+#FifthSectionTitle{
+    position:relative; left:30%;
+}
+
+
+.SixththSection{
+    width:100%;
+    height:270px;
+    background-image: url("img/images/Get-Started-BG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.SeventhSection{
+    width:100%;
+    height:300px;
+}
+
+
+#readyToStart{
+        background-color:transparent; 
+        border:none;cursor:pointer; 
+        border-bottom:1px solid lightgray; 
+        
+    }
+
+#nave_li_a_color{
+       position:fixed;
+       top:80px;
+       width:90%;
+       background-color: #2855AA;
+       padding:10px;
+       z-index:99999;
+}
+#socialLink
+    {
+        width:40px; 
+        height:40px; 
+        margin:3px; 
+        border-radius:50px; 
+        border:1px solid lightgray; 
+        text-align: center; 
+        line-height:40px;
+    }
+
+@media (max-width:480px){
+    .navbar-toggler{
+        background-color: #F0F3F4;
+        margin-left:25%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    /* show 4 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+      display: block;
+    }
+  
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+      transition: none;
+    }
+  
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    /* farthest right hidden item must be absolue position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+
+    
+  }
+
+
+
+  
+  #SlideImg{
+      background-image: url("img/images/Course-BG.jpg");
+  }
+
+
+
+
+@media (min-width:991px){
+#nave_li_a_color{
+    position:relative;
+    background-color:transparent; 
+    margin-left:30%;
+    margin-top:-1%;
+    top:0;
+}
+
+#nave_li_a_color li{
+    margin-left:10px;
+}
+#hrColor{
+	 border:1px solid#cccccc;
+	 width:500%;
+}
+#seconSectionImg{
+    margin-top:-75px;
+}
+#FirstSectionRowP{
+    color:cornsilk; 
+    font-size: 48px; 
+    font-weight:450; 
+    letter-spacing: 3px; 
+    margin-bottom:-25px;
+}
+#FirstSectionRowP1{
+    color:cornsilk; 
+    font-size:20px;
+}
+#Button2{
+    margin-top:0px;
+    margin-left:10px;
+    }
+
+
+
+    .ThirdSection{
+        width:100%;
+        height:auto;
+        line-height:75px;
+        background-color: #E5E9EE;
+    }
+
+    #mailButtopn{
+        margin-top:0px;
+    }
+    #readyToStart{
+        background-color:transparent; 
+        border:none;cursor:pointer; 
+        border-bottom:1px solid lightgray; 
+        width:350px;
+    }
+
+    
+    #socialLink
+    {
+        width:30px; 
+        height:30px; 
+        margin:3px; 
+        border-radius:50px; 
+        border:1px solid lightgray; 
+        text-align: center; 
+        line-height:30px;
+    }
+
+
+
+}
+
+
+
+@media (min-width:1190px){
+.banner{
+    width:100%;
+    height: 660px;
+    background-image: url("img/Banner.jpg");
+}
+   #readyToStart{
+        background-color:transparent; 
+        border:none;cursor:pointer; 
+        border-bottom:1px solid lightgray; 
+        width:350px;
+    }
+#nave_li_a_color{
+    position:relative;
+    background-color:transparent; 
+    margin-left:50%;
+    margin-top:-1%;
+    top:0;
+}
+#nave_li_a_color li{
+    margin-left:10px;
+}
+#nave_li_a_color1{
+    margin-left:68%;
+    margin-top:-1%;
+}
+#nave_li_a_color1 li{
+    margin-left:10px;
+}
+#nave_li_a_color1 li a{
+  color:white;
+}
+.btnInfo{
+    background-color:white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:5px;
+    height:30px;
+    width:150px;
+    margin-top:6px;
+    line-height:15px;
+     
+    font-size:13px; 
+    font-weight:bold;
+}
+#hrColor{
+	 border:1px solid#cccccc;
+     width:575%;
+     margin-top: -3px;
+     margin-left: 101%;
+}
+#seconSectionImg{
+    margin-top:-75px;
+}
+#FirstSectionRowP{
+    color:cornsilk; 
+    font-size: 48px; 
+    font-weight:450; 
+    letter-spacing: 3px; 
+    margin-bottom:-25px;
+}
+#FirstSectionRowP1{
+    color:cornsilk; 
+    font-size:20px;
+}
+#Button2{
+    margin-top:0px;
+    margin-left:10px;
+    }
+
+
+
+
+    .ThirdSection{
+        width:100%;
+        height:auto;
+        line-height:75px;
+        background-color: #E5E9EE;
+    }
+    #mailButtopn{
+        margin-top:0px;
+    }
+    
+    
+    
+    
+    #socialLink
+    {
+        width:40px; 
+        height:40px; 
+        margin:3px; 
+        border-radius:50px; 
+        border:1px solid lightgray; 
+        text-align: center; 
+        line-height:40px;
+    }
+}
+
+

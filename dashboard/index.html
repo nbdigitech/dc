@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Direction Classes</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylingSheet0202.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+  .card-custom {
+  overflow: hidden;
+  min-height: 350px;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+
+.card-custom:not( :hover ){
+    transition: .5s all;
+}
+.card-custom-img {
+  height: 200px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: inherit;
+}
+
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+  position: absolute;
+  content: '';
+  top: 161px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 40px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 545px;
+  border-left-width: calc(405px - 5vw);
+  border-top-color:transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: inherit;
+}
+
+.card-custom-avatar{
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  top: 100px;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align:center;
+  color:white;
+  font-weight:bold;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color:#2856AE;
+    width:100%;
+    height:76px;
+    z-index: 2;
+  }
+  .sticky1 {
+    margin-top:8px;
+  }
+@media (min-width:991px){
+    #dashLog{
+        width:56%;
+    }
+     #dashLine{
+        border:1px solid #cccccc;margin-top:-3px;margin-left:139px;width:665px;
+    }
+    .card-custom:hover {
+    transform:scale(1.1);
+    transition:.5s all;
+    cursor:pointer;
+}
+}
+@media (min-width:1190px){
+    #dashLog{
+        width:61%;
+    }
+     #dashLine{
+        border:1px solid #cccccc;margin-top:-3px;margin-left:139px;width:800px;
+    }
+    .card-custom:hover {
+    transform:scale(1.1);
+    transition:.5s all;
+    cursor:pointer;
+}
+}
+
+    </style>
+</head>
+<body>
+
+    <!--HEADER PART STARTS FROM HERE-->
+    <section class="headerPart">
+        <div id="topMenuOne">
+
+          <div id="naveOne">
+              <br>
+                <nav class="navbar navbar-expand-lg " id="navbar">
+                        <div class="container" id="container">
+                        <a class="navbar-brand" href="#" id="dashLog">
+                            <img src="../img/Logo.png" alt="">
+                            <hr id="dashLine">
+                        </a>
+                        
+                        <button class="navbar-toggler" style="background-color:white;color:black;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon" style="color:black;">=</span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav navbar-left mr-auto" id="navOneUl">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Study Material <span class=""><i class="fa fa-caret-down"></i></span></a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Material 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Material 1</a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+                            <li class="nav-item ">
+                               <a class="nav-link" href="#">Board <span class=""><i class="fa fa-caret-down"></i></span></a>
+                               <ul>
+                                    <li>
+                                        <a href="#">CBSE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CG Board</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">IB</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Class<span class=""><i class="fa fa-caret-down"></i></span></a>
+                                <ul>
+                                    <li>
+                                        <a href="#">9th</a>
+                                    </li>
+                                    <li> 
+                                        <a href="#">10th</a> 
+                                    </li>
+                                    <li>   
+                                        <a href="#">11th</a> 
+                                    </li>
+                                     <li>
+                                         <a href="#">12th</a>
+                                    </li>
+                                   
+                                </ul>
+                            </li>
+
+                            
+                          </ul>
+
+
+                          <ul class="navbar-nav navbar-right" id="navOneUl">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="font-size:13px;color:#2752AF" id="logdUsr"><b>EDIT PROFILE</b><span class="sr-only">(current)</span></a>
+                            </li>
+                          </ul>
+                          
+                        </div>
+                    </div>
+                      </nav>
+                    
+          </div>
+          <div id="naveTwo">
+               
+          </div>
+
+        </div>
+        
+        <div id="topMenuTwo">
+          <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+
+                        <div class="navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav navbar-left mr-auto">
+                            <li class="nav-item active" style="color:white; font-size:15px;">
+                              Welcome <span style="color:white; font-size:15px; font-weight:bold;">G. Manikam Naidu</span>
+                            </li>
+                            
+                          </ul>
+
+
+                          <ul class="navbar-nav navbar-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="color:white;font-size:20px;font-weight:bold;">₹ 0.00 
+                                    <span style="color:white;font-size:12px;font-weight:bold;">
+                                        DC Wallet Balance
+                                    </span>  
+                                </a>
+                            </li>
+                          </ul>
+                          
+                        </div>
+                      </nav>
+          </div>
+        </div>
+        
+        
+    </section>
+
+    <!--BODY PART STARTS FROM HERE-->
+    <section class="bodyPart">
+       <div class="container"> <br>
+         <div class="breadcrum" style="color:white;margin-left:15px;margin-top:-15px;margin-bottom:5px;">
+            <a href="#" style="color:white;">Home</a><span>/Home</span>
+         </div>
+       </div>
+            
+       
+                  
+            <!--DC Offerings-->
+            <div class="container">
+                <form style="margin-bottom:-35px;">
+                    <select class="form-control" style="width:180px;margin-left:15px;">
+                        <option value="">Select Category</option>
+                        <option value="">Category 1</option>
+                        <option value="">Category 2</option>
+                    </select>
+                </form>
+                
+                
+              <!--<h5 style="margin-top:30px;color:white">DC Offerings</h5>  -->
+                
+        <div class="row pt-5 m-auto">
+             
+              <div class="col-md-6 col-lg-3 pb-3">
+        
+                <!-- Copy the content below until next comment -->
+                <div class="card card-custom bg-white border-white border-0">
+                  <div class="card-custom-img" style="background-image: url(img/richcard-min.jpg);"></div>
+                  <div class="card-custom-avatar">
+                      Grade 10th
+                  </div>
+                  <div class="card-body" style="overflow-y: auto">
+                    <h4 class="card-title">Class 10 JEE Crash Course - 2018-19</h4>
+                      <p class="card-text" style="font-size:12px;">Starting From <br><span style="font-size:12px;font-weight:bold">29 Jan</span></p>
+                      <p class="card-text" style="font-size:12px;">Duration <br><span style="font-size:12px;font-weight:bold">1 Day</span></p>
+                  </div>
+                  <div class="card-footer border-primary" style="background: inherit; border-color: inherit;">
+                    <i class="fa fa-inr"> <span style="font-size:18px;">6000</span></i> 
+                    <a href="" class="btn btn-primary" style="background-color:#ff891b;border:none;width:100px;height:30px;line-height:15px;float:right">Add to cart</a>
+                  </div>
+                </div>
+                <!-- Copy until here -->
+        
+              </div>
+              <div class="col-md-6 col-lg-3 pb-3">
+        
+                <!-- Copy the content below until next comment -->
+                <div class="card card-custom bg-white border-white border-0">
+                  <div class="card-custom-img" style="background-image: url(img/richcard-min.jpg);"></div>
+                  <div class="card-custom-avatar">
+                     Grade 10th
+                  </div>
+                  <div class="card-body" style="overflow-y: auto">
+                    <h4 class="card-title">Class 10 JEE Crash Course - 2018-19</h4>
+                      <p class="card-text" style="font-size:12px;">Starting From <br><span style="font-size:12px;font-weight:bold">29 Jan</span></p>
+                      <p class="card-text" style="font-size:12px;">Duration <br><span style="font-size:12px;font-weight:bold">1 Day</span></p>
+                  </div>
+                  <div class="card-footer border-primary" style="background: inherit; border-color: inherit;">
+                    <i class="fa fa-inr"> <span style="font-size:18px;">6000</span></i>
+                    <a href="" class="btn btn-primary" style="background-color:#ff891b;border:none;width:100px;height:30px;line-height:15px;float:right">Add to cart</a>
+                  </div>
+                </div>
+                <!-- Copy until here -->
+        
+              </div>
+              <div class="col-md-6 col-lg-3 pb-3">
+        
+                <!-- Copy the content below until next comment -->
+                <div class="card card-custom bg-white border-white border-0">
+                  <div class="card-custom-img" style="background-image: url(img/richcard-min.jpg);"></div>
+                  <div class="card-custom-avatar">
+                     Grade 10th
+                  </div>
+                  <div class="card-body" style="overflow-y: auto">
+                    <h4 class="card-title">Class 10 JEE Crash Course - 2018-19</h4>
+                    <p class="card-text" style="font-size:12px;">Starting From <br><span style="font-size:12px;font-weight:bold">29 Jan</span></p>
+                    <p class="card-text" style="font-size:12px;">Duration <br><span style="font-size:12px;font-weight:bold">1 Day</span></p>
+                  </div>
+                  <div class="card-footer border-primary" style="background: inherit; border-color: inherit;">
+                    <i class="fa fa-inr"> <span style="font-size:18px;">6000</span></i>
+                    <a href="" class="btn btn-primary" style="background-color:#ff891b;border:none;width:100px;height:30px;line-height:15px;float:right">Add to cart</a>
+                  </div>
+                </div>
+                <!-- Copy until here -->
+        
+              </div>
+              <div class="col-md-6 col-lg-3 pb-3">
+        
+                <!-- Copy the content below until next comment -->
+                <div class="card card-custom bg-white border-white border-0">
+                  <div class="card-custom-img" style="background-image: url(img/richcard-min.jpg);"></div>
+                  <div class="card-custom-avatar">
+                     Grade 10th
+                  </div>
+                  <div class="card-body" style="overflow-y: auto">
+                    <h4 class="card-title">Class 10 JEE Crash Course - 2018-19</h4>
+                      <p class="card-text" style="font-size:12px;">Starting From <br><span style="font-size:12px;font-weight:bold">29 Jan</span></p>
+                      <p class="card-text" style="font-size:12px;">Duration <br><span style="font-size:12px;font-weight:bold">1 Day</span></p>
+                  </div>
+                  <div class="card-footer border-primary" style="background: inherit; border-color: inherit;">
+                    <i class="fa fa-inr"> <span style="font-size:18px;">6000</span></i>
+                    <a href="" class="btn btn-primary" style="background-color:#ff891b;border:none;width:100px;height:30px;line-height:15px;float:right">Add to cart</a>
+                  </div>
+                </div>
+                <!-- Copy until here -->
+        
+              </div>
+      </div>
+                
+                
+
+                    <a href="#">View All Courses</a>
+            </div>
+
+
+
+
+
+            <div class="container">
+                    <div class="row" style="margin-top:15px;">
+                        
+                        
+                        <div class="col-lg-4" style="margin-top:15px;background-color:#F0F0F0;padding:10px;border:5px solid #ffffff;border-radius:7px;">
+                            <p style="font-size:13px">Purchase our Material Today!!</p>
+                        </div>
+                        <div class="col-lg-3" style="margin-top:15px;background-color:#F0F0F0;padding:10px;border:5px solid #ffffff;border-radius:7px;">
+                            <p style="font-size:13px">Get ready and make notes while taking online Courses and for any doubt ask questions in Q&A section.</p>
+                        </div>
+                        <div class="col-lg-5" style="margin-top:15px;background-color:#F0F0F0;padding:10px;border:5px solid #ffffff;border-radius:7px;">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p style="font-size:13px">
+                                                Feel free to contact us, We are here to help you only!!
+                                        </p>
+                                            
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p style="font-size:13px">
+                                               For more information: Call 9987758132 or mail us directionclassesmumbai@gmail.com 
+                                                <br><br>
+                                                For feedback & suggestions: mail us directionclassesmumbai@gmail.com
+                                        </p>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+
+
+
+                <div id="callUs" style="background-color:#2CA8FF;color:white;">
+           
+                        <div class="container">
+                                <div id=""> 
+                                        <br> <div class="row">
+                                        <div class="col-lg-8 col-md-6"><br>
+                                                <h5>Need Something more specific?</h5>
+                                                Discuss with our counsellor to get a customized study plan designed for you. 
+                                        </div>
+                                        <div class="col-lg-4 col-md-6"><br>
+                                              <center>  <a href="#" class="btn btn-outline-primary" id="callUsBtn" style="color:white">TALK TO US</a></center>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                </div>
+                        </div>
+                   
+                </div>
+    </section>
+    
+
+<!--FOOTER PART STARTS FROM HERE-->
+<section class="footerPart">
+        <div class="container">
+           <div class="row">
+               <div class="col-lg-3" style="color:white;">
+                   
+                    <ul id="firstList"> <br>
+                        <li> <h5>QUICK LINKS</h5></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">View Teachers</a></li>
+                        <li><a href="#">Become a Teacher</a></li>
+                        <li><a href="#">Find me a Teacher</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Try Whiteboard</a></li>
+                    </ul>
+                    
+                    
+               </div>
+               <div class="col-lg-3">
+                    <ul id="firstList"> <br>
+                        <li> <h5 style="color:white;">TARGET EXAMS</h5></li>
+                        <li><a href="#">CBSE Tuitions</a></li>
+                        <li><a href="#">ICSE Tuitions</a></li>
+                        <li><a href="#">JEE Main</a></li>
+                        <li><a href="#">Revision Notes</a></li>
+                        <li><a href="#">IGCSE Past Papers</a></li>
+                        <li><a href="#">Previous Year Question Paper</a></li>
+                        <li><a href="#">Sample Papers</a></li>
+                        <li><a href="#">HC Verma Solutions</a></li>
+                        <li><a href="#">ICSE Class 10 Solution</a></li>
+
+                    </ul>
+                    
+               </div>
+               <div class="col-lg-3">
+                    <ul id="firstList"> <br>
+                        <li> <h5 style="color:white;">INFO</h5></li>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">Why DC?</a></li>
+                        <li><a href="#">FTestimonials</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">TPrivacy Policy</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                    
+               </div>
+               <div class="col-lg-3">
+                    <ul id="firstList" style="color:white;font-size:13px"> <br>
+                        <li style="color:white;">
+                            <a href="" class="btn btn-outline-primary" style="font-size:18px;color:white;border:1px solid white; width:40px; height:40px; border-radius:50px;margin-right:20px;">
+                               <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="" class="btn btn-outline-primary" style="font-size:18px;color:white;border:1px solid white; width:40px; height:40px; border-radius:50px;margin-right:20px;">
+                               <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="" class="btn btn-outline-primary" style="font-size:18px;color:white;border:1px solid white; width:40px; height:40px; border-radius:50px;margin-right:20px;">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li style="color:rgb(57, 146, 247);font-size:25px">080 39511577</li>
+                        <li>(Mon-Sun: 9am - 9pm IST)</li>
+                        <li><a style="color:rgb(57, 146, 247);">Questions? </a><a href="#"> directionclasses@gmail.com</a></li>
+                        
+                    </ul>
+               </div>
+           </div>
+        </div>
+    </section>
+
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var navbar1 = document.getElementById("container");
+            
+            var sticky = navbar.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                  navbar.classList.add("sticky");
+                  navbar1.classList.add("sticky1");
+                } else {
+                  navbar.classList.remove("sticky");
+                  navbar1.classList.remove("sticky1");
+                }
+              }
+            
+            </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

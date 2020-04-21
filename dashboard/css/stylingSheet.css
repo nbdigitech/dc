@@ -1,0 +1,153 @@
+
+
+/*#########
+|
+| NAVBAR STYLING
+|
+#########*/
+
+body{
+    background-image: url("../img/Banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 99% 450px;
+}
+#topMenuTwo{
+    height: 130px;
+    background-color: #2CA8FF;
+}
+#callUs{
+    margin-top:35px;
+    height:250px;
+    background-color:rgb(169, 212, 247);
+}
+#callUs1{
+    position:absolute;
+    left:10%;
+    transform:translate(-20% -0%);
+}
+
+#callUsBtn{
+    border-radius:5px;
+    padding:10px 100px 10px 100px;
+    color:#007BFF;
+    font-weight:bold;
+    margin-top:7px;
+}
+#callUsBtn:hover{
+    color:white;
+}
+#dc_offer:hover{
+    transform: scale(1);
+    box-shadow: 0 6px 12px 0 rgba(40, 83, 177, 0.479);
+    cursor:pointer;
+}
+#navOneUl li ul{
+list-style: none;
+background-color:white;
+position:absolute;
+padding: 6px;
+margin: 0;
+top:54px;
+z-index: 1;
+border-radius:3px;
+}
+#navOneUl li ul li{
+width:130px;
+height:30px;  
+line-height:30px;
+}
+#navOneUl li ul li a{
+color: #2853AF;
+text-decoration: none;
+display: block;
+}
+#navOneUl li ul li a:hover{
+color:white;
+background-color:  #2853AF;
+padding-left:10px;
+transition: .5s all;
+}
+#navOneUl li ul{
+display: none;
+}
+#navOneUl li:hover ul{
+transition: 9s all;
+display: block;
+
+}
+#logdUsr{
+color:black;
+padding-left: 22px;
+padding-right: 22px;
+background-color:white;
+border-radius:5px;
+margin-top:-15px;
+height:30px;
+line-height:13px;
+}
+#logdUsr:hover{
+transition:.3s all;
+transform: scale(1.1);
+box-shadow: 0 6px 12px 0 rgba(200, 204, 246, 0.2);
+color: rgb(20, 2, 126)
+}
+#logdUsr:not( :hover ){
+    transition: .3s all;
+}
+
+@media (min-width:480px){
+body{
+background-image: url("../img/Banner.jpg");
+background-repeat: no-repeat;
+background-size: 100% 450px;
+}
+#naveOne{
+height: 80px;
+background-color: transparent;
+border-bottom: 1px solid rgba(0, 0, 0, 0.4)
+}
+.nav-link{
+color:white;
+}
+.nav-link:hover{
+color:rgb(129, 181, 241);
+}
+/* #naveTwo{
+width: 100%;
+height: 70px;
+background-color: white;
+} */
+
+#topMenuTwo{
+height: 42px;
+line-height: 42px;
+background-color: #2CA8FF;
+}
+
+.footerPart
+{
+background-color: #1C1C1C;
+}
+
+#firstList > li{
+list-style: none;
+}
+#firstList > li > a{
+text-decoration: none;
+color:rgb(170, 170, 170);
+font-size:12px;
+}
+#firstList > li > a:hover{
+color:rgb(57, 146, 247);
+}
+#NoOver:hover{
+color:white;
+}
+
+#callUs{
+margin-top:35px;
+height:150px;
+background-color:rgb(169, 212, 247);
+}
+
+}

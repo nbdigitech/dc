@@ -1,0 +1,15 @@
+[01-Feb-2019 06:27:58 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'Yii' not found in /home1/direceye/khaliqurrahman.com/dc/linkedin.php:32
+Stack trace:
+#0 {main}
+  thrown in /home1/direceye/khaliqurrahman.com/dc/linkedin.php on line 32
+[01-Feb-2019 11:28:35 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function curl() in /home1/direceye/khaliqurrahman.com/dc/linkedin.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/direceye/khaliqurrahman.com/dc/linkedin.php on line 15
+[01-Feb-2019 11:29:55 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function curl() in /home1/direceye/khaliqurrahman.com/dc/linkedin.php:32
+Stack trace:
+#0 {main}
+  thrown in /home1/direceye/khaliqurrahman.com/dc/linkedin.php on line 32
+[01-Feb-2019 11:32:59 America/Chicago] PHP Warning:  http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given in /home1/direceye/khaliqurrahman.com/dc/linkedin.php on line 20
+[01-Feb-2019 11:34:59 America/Chicago] PHP Warning:  http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given in /home1/direceye/khaliqurrahman.com/dc/linkedin.php on line 20
+[01-Feb-2019 11:48:29 America/Chicago] PHP Warning:  http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given in /home1/direceye/khaliqurrahman.com/dc/linkedin.php on line 20

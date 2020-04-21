@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="main010.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .btnInfo:hover{
+        transform:scale(1.1);
+        transition: .2s all;
+    }
+    .btnInfo:not( :hover ){
+        transition: .2s all;
+    }
+    #testiOver:hover{
+      background-color: white;
+      box-shadow: 2px 5px 8px rgba(3, 99, 114, 0.7);
+    }
+    #studyMaterial:hover{
+      background-color:white;
+      transition: .3s all;
+      -webkit-box-shadow: 0px 0px 10px #2C56BC;
+      -moz-box-shadow: 0px 0px 10px #2C56BC;
+      box-shadow: 0px 0px 10px #2C56BC;
+      z-index:1;
+    }
+    #btnTo{
+      width:170px; 
+      color:#2854AD; 
+      border-radius:5px;
+      background-color:white;
+      font-weight:500;
+  }
+  #btnTo1{
+    width:170px; border-radius:5px;font-size:15px;
+  }
+   #btnTo:hover{
+      background-color:#0069D9;
+      color:white;
+  }
+  #ifrm{
+    width:100%;
+    height:245px; 
+    border:none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+
+  .media{
+    width:100%;
+    height:245px; 
+    
+  }
+  
+  .ifrm:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    width:89%;
+    height:245px; 
+    -webkit-box-shadow: 0 0 0 8px #2C56BC;
+    -moz-box-shadow: 0 0 0 8px #2C56BC;
+    box-shadow: 0 0 0 8px #2C56BC;
+  /*   box-shadow: 0px 0px 61px 6px rgba(0,0,0,0.68); */
+    pointer-events: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .dropdown-menu{
+    background-color:#2855aa;
+    color:black;
+    border:1px solid white;
+    border-radius:0px 10px 10px 10px;
+  }
+.dropdown-item:hover{
+  background-color: #0069D9;
+  color:white;
+  padding-left:30px;
+  transition: .5s all;
+}
+
+#socialLink:hover > a
+{
+    background-color:#2855AA;
+    color:white;
+    display:block;
+    border-radius:50px;
+}
+#mailButtopn{
+    margin-top:15px;
+    border:none;cursor:pointer; border-radius:5px;padding-left:20px;padding-right:20px;height:35px;line-height:5px;
+}
+#GetItNow{
+    margin-top:50px;
+}
+#bannerContent{
+    position:relative;
+}
+
+
+    /* Tablet and up */
+
+@media screen and (max-width: 480px) {
+    .SixththSection{
+    width:100%;
+    height:300px;
+    background-image: url("img/images/Get-Started-BG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top:-50px;
+}
+  #btnTo{
+    margin-top:10px;
+  }
+  #ifrm{
+    width:270px;
+    height:140px;; 
+  }
+  .media{
+     width:100%;
+    height:150px; 
+    
+  }
+  
+  .ifrm:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    width:82%;
+    height:150px; 
+    -webkit-box-shadow: 0 0 0 6px #2C56BC;
+    -moz-box-shadow: 0 0 0 6px #2C56BC;
+    box-shadow: 0 0 0 6px #2C56BC;
+  /*   box-shadow: 0px 0px 61px 6px rgba(0,0,0,0.68); */
+    pointer-events: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  #btnTo1{
+    width:300px; border-radius:5px;font-size:15px;
+  }
+   #btnTo{
+      width:300px; 
+      color:#2854AD; 
+      border-radius:5px;
+      background-color:white;
+      font-weight:500;
+  }
+  
+  #bannerContent{
+      margin-top:-50px;
+  }
+  
+  #mailButtopn{
+    margin-top:15px;
+    border:none;cursor:pointer; border-radius:5px;padding-left:20px;padding-right:20px;height:40px;width:220px;line-height:5px;
+}
+  
+  #GetItNow{
+    margin-top:50px;
+}
+  
+}
+
+
+
+@media screen and (min-width: 768px) {
+  
+}
+
+/* Desktop and up */
+
+@media screen and (min-width: 992px) {
+ 
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color:#2856AE;
+  width:100%;
+  height:76px;
+  z-index: 2;
+}
+.sticky1 {
+  margin-top:8px;
+}
+</style>
+</head>
+<body>
+    <section class="banner">
+      
+    
+<br>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container" id="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/images/Logo.png" alt="">
+                <hr id="hrColor">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <br>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav" id="nave_li_a_color">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Board
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Class
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something </a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                      </li>
+
+                      <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login<span class="sr-only">(current)</span></a>
+                     </li>
+
+                     <li class="nav-item">
+                            <a class="nav-link btnInfo" href="login.html" style="color:#2854AD;padding-left: 22px;
+                            padding-right: 22px;"><center>Register for free</center><span class="sr-only">(current)</span></a>
+                     </li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+       
+  
+
+<br><br>
+<div class="container" id="bannerContent">
+<br>
+    <div class="row navbar navbar-expand-lg">
+      <div class="col-lg-6">
+        <p id="FirstSectionRowP"><b>LEARN &</b></p>
+        <p id="FirstSectionRowP"><b>PREPARE</b></p>
+        <p id="FirstSectionRowP" style="margin-bottom:0px;"><b>YOUR CAREER</b></p>
+
+        <p id="FirstSectionRowP1">
+            Delivering papers, Doubt Sessions and Live Classes for students of international boards, national boards and state boards.
+        </p>
+<br>
+        <a href="#" class="btn btn-primary btn-lg" id="btnTo1">WATCH VIDEO</a>
+        <a href="login.html" class="btn btn-lg" id="btnTo" style="font-size:15px;">REGISTER FOR FREE</a>
+        <p style="color:white; margin-top:20px;">Access 50,000+ videos, tests, quizzes, games, interactive lessons and much more.</p>
+    </div>
+
+    <div class="col-lg-6">
+     <div class="container">
+       <div class="ifrm">
+          <iframe class="media" src="https://www.youtube.com/embed/bfQr1QldbTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div> 
+       
+     <p style="color:white;margin-top:20px; text-align:center">
+        Study the structural difference between arteries and veins.
+     </p>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  
+ </section>
+
+
+<!--@@@@@  SECOND SECTION STARTS  @@@@@-->
+<section class="SecondSection">
+  <div class="container">
+    <div class="row navbar navbar-expand-lg">
+      <!--studyMaterial-->
+      <div class="col-lg-4 col-sm-4 col-md-4" id="">
+        <center> <img src="img/images/Circle1.png" id="seconSectionImg"> </center> <br>
+        <center> <h3>Schedule Live Classes - </h3></center> 
+        <p style="text-align:center">
+            Get Register yourself in different courses from the best and experienced educators.
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-sm-4 col-md-4" id="">
+        <center> <img src="img/images/Circle2.png" id="seconSectionImg"> </center> <br>
+        <center> <h3>Study material - </h3></center> 
+        <p style="text-align:center">
+            Sample past papers which are topicwise, subjectwise categorized for al international,national and state boards.
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-sm-4 col-md-4" id="">
+        <center> <img src="img/images/Circle3.png" id="seconSectionImg"> </center> <br>
+        <center> <h3>Doubt sessions - </h3></center> 
+        <p style="text-align:center">
+            Enroll yourself for free and get free Questions and Answers sessions by highest quality educators 
+        </p>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+</section>
+
+
+<!-- @@@@@ THIERD SECTION STARTS @@@@@-->
+<section  class="ThirdSection">
+  <div class="container">
+
+    <div class="row navbar navbar-expand-lg">
+<!--testiOver-->
+      <div class="col-lg-3" id="">
+        <center> <img src="img/testimonial/1.png" alt="" width="70%"> </center>
+      </div>
+
+      <div class="col-lg-3" id="">
+        <center> <img src="img/testimonial/2.png" alt="" width="70%"> </center>
+      </div>
+  
+      <div class="col-lg-3" id="">
+          <center> <img src="img/testimonial/3.png" alt="" width="70%"> </center>
+      </div>
+  
+      <div class="col-lg-3" id="">
+          <center> <img src="img/testimonial/4.png" alt="" width="70%"> </center>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- @@@@@ THIERD SECTION ENDS @@@@@-->
+
+
+
+<!-- @@@@@  FORTH SECTION STARS  @@@@@-->
+<section class="ForthSection">
+    <div class="container">
+        <br><br><br><br>
+        <div class="row navbar navbar-expand-lg">
+
+              <div class="col-lg-6">
+                <img src="img/images/Computer Img.jpg" alt="" width="100%">
+              </div>
+              <div class="col-lg-6">
+                  <h3>Study Material</h3>
+                  We provide you the quality sample papers of International boards like IGCSE, ICSE, National boards like CBSE and state boards as well, with detailed solutions.Sample papers are categorised into different types like subjectwise, topicwise. Prepare questions from sample papers, clear your concepts, learn faster and score good.
+              </div>
+
+         </div>
+
+        <div class="row navbar navbar-expand-lg" style="margin-top:10px">
+
+            <div class="col-lg-6">
+              <h3>Exclusive Live Classes</h3>
+              Learn the topics of the subjects online.We provide online courses of chemistry, physics, biology, and other subjects from best teachers who delivers superior teaching to students.Study online courses according to your conveninence and clear your concepts.
+            </div>
+
+            <div class="col-lg-6">
+              <img src="img/images/Computer Img.jpg" alt="" width="100%">
+            </div>
+
+        </div>
+
+
+        <div class="row navbar navbar-expand-lg" style="margin-top:10px">
+
+            <div class="col-lg-6">
+              <img src="img/images/Computer Img.jpg" alt="" width="100%">
+            </div>
+            <div class="col-lg-6">
+                <h3>Free Doubt Sessions and Live Workshops</h3>
+                Get your doubts cleared by top faculties through our Forum and attend live Classes ask me anything Sesssions and Live workshops demonstrating practicals and special tips and tricks for students ,this helps in understanding fundamentals and concepts in easy way  
+            </div>
+
+       </div>
+
+        <br><br>
+    </div>
+</section>
+
+
+<!-- @@@@@  FIFTH SECTION STARS  @@@@@-->
+<section class="FifthSection">
+  <div class="container">
+<br><br><br>
+<style>
+  
+    #slider_btn{
+      text-decoration: none; 
+      font-weight:bold; 
+      background-color:white; 
+      color:#2854AD;
+      border-radius:5px; 
+      border:none;
+      width:120px;
+      height:30px;
+      line-height:15px;
+      display:block;
+    }
+    #slider_btn:hover{
+      transition:.2s all;
+      transform:scale(1.1);
+      background-color:#2755AA; 
+      color:white;
+    }
+    #slider_btn:not(:hover){
+      transition:.2s all;
+    }
+</style>
+      <div class="container-fluid" style="color:white;">
+          <h1 class="text-center mb-3" style="color:black;">Use our Live courses as boon</h1>
+          <h5  class="text-center mb-3" style="color:black;">Study by our top professionals and accelerate your future.</h5>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner row w-100 mx-auto">
+             
+             
+              <div class="carousel-item col-md-3 active">
+                <div class="card" id="SlideImg">
+                  <img class="card-img-top img-fluid" src="img/images/Course-Image.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">10 IGCSE</h4>
+                    Invest in yourself by study International Courses with our top accredited cambridge professionals.
+                    <hr style="border:1px solid white;"/>
+                    <div><center> <a href="#" id="slider_btn" class="btn" > CLICK HERE </a></center></div>
+                  </div>
+                 
+                </div>
+              </div>
+
+              <div class="carousel-item col-md-3">
+                <div class="card" id="SlideImg">
+                  <img class="card-img-top img-fluid" src="img/images/Course-Image.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">10 ICSE</h4>
+                    Invest in yourself by study International Courses with our top accredited cambridge professionals.
+                    <hr style="border:1px solid white;"/>
+                    <div><center><a href="#" sttle="height:100px;" id="slider_btn" class="btn">CLICK HERE</a></center></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-md-3">
+                <div class="card" id="SlideImg">
+                  <img class="card-img-top img-fluid" src="img/images/Course-Image.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">10 CBSE</h4>
+                    Invest in yourself by study International Courses with our top accredited cambridge professionals.
+                    <hr style="border:1px solid white;"/>
+                    <div><center><a href="#" sttle="height:100px;" id="slider_btn" class="btn">CLICK HERE</a></center></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-md-3">
+                <div class="card" id="SlideImg">
+                  <img class="card-img-top img-fluid" src="img/images/Course-Image.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">12 IGCSE</h4>
+                    Invest in yourself by study International Courses with our top accredited cambridge professionals.
+                    <hr style="border:1px solid white;"/>
+                    <div><center><a href="#" sttle="height:100px;" id="slider_btn" class="btn">CLICK HERE</a></center></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-md-3">
+                <div class="card" id="SlideImg">
+                  <img class="card-img-top img-fluid" src="img/images/Course-Image.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">12 ICSE</h4>
+                    Invest in yourself by study International Courses with our top accredited cambridge professionals.
+                    <hr style="border:1px solid white;"/>
+                    <div><center><a href="#" sttle="height:100px;" id="slider_btn" class="btn">CLICK HERE</a></center></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-md-3">
+                <div class="card" id="SlideImg">
+                  <img class="card-img-top img-fluid" src="img/images/Course-Image.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">12 CBSE</h4>
+                    Invest in yourself by study International Courses with our top accredited cambridge professionals.
+                    <hr style="border:1px solid white;"/>
+                    <div><center><a href="#" sttle="height:100px;" id="slider_btn" class="btn">CLICK HERE</a></center></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item col-md-3">
+                <div class="card" id="SlideImg">
+                  <img class="card-img-top img-fluid" src="img/images/Course-Image.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">12 IBDP</h4>
+                    Invest in yourself by study International Courses with our top accredited cambridge professionals.
+                    <hr style="border:1px solid white;"/>
+                    <div>
+                      <center><a href="#" sttle="height:100px;" id="slider_btn" class="btn">CLICK HERE</a></center>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" style="margin-left:-15px;width:20px;">
+              <span class="" aria-hidden="true" style="color:#2855AA; font-size:30px;"><i class="fa fa-chevron-left"></i></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" style="margin-right:-15px;width:20px;">
+              <span class="" aria-hidden="true" style="color:#2855AA; font-size:30px;"><i class="fa fa-chevron-right"></i></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+        </div>
+
+    <br><br><br><br>
+  </div>
+</section>
+
+
+
+<!-- @@@@@  SIXTH SECTION STARS  @@@@@-->
+<section class="SixththSection">
+  <div class="container">
+    <center> 
+      <div class="row navbar navbar-expand-lg">
+          
+        <div class="col-md-12" id="GetItNow">
+          <h2>Ready to get started</h2>
+          <p>Be one step ahead with our latest deals, offer and discount for online Courss.</p>
+          <form action="hello.php">
+            <input type="text" placeholder="Email address" id="readyToStart">
+            <button type="submit" class="btn btn-primary" style=" " id="mailButtopn">GET IT NOW </button>
+          </form>
+        </div>
+      
+     </div>
+  </center>
+
+
+
+    <br><br><br>
+  </div>
+</section>
+
+
+<!-- @@@@@  SEVENTH SECTION STARS  @@@@@-->
+<section class="SeventhSection">
+    <div class="container">
+        <br><br><br>
+        <div class="row navbar navbar-expand-lg">
+            
+      <div class="col-md-3">
+        <h1><img src="img/images/Footer-Logo.png" alt=""></h1>
+        <p>Education is not only learning of fact, but the training of mind to think, We believe that "Children must be taught how to think and not what to think".</p>
+      </div>
+
+      <div class="col-md-3">
+          <h2>CONTACT</h2>
+          <hr/>
+          <style>
+           
+          </style>
+          <ul id="contactUL">
+            <li>wwww.directionclasses.com</li>
+            <li>directionclassesmumbai@gmail.com</li>
+            <li>+91 99987 758132</li>
+          </ul>
+
+          <br><br><br>
+        </div>
+
+        <div class="col-md-4">
+            <h2>SITEMAP</h2>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul id="sitemapUL">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Board</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#"> Contact Us</a></li>
+                      </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul id="sitemapUL">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Parent Testimonials</a></li>
+                        <li><a href="#">Blog</a></li>
+                      </ul>
+                </div>
+            </div>
+            <br><br>
+          </div>
+
+          <div class="col-md-2">
+              <h2>SOCIAL</h2>
+              <hr/>
+              <div class="row">
+                <div id="socialLink"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                <div id="socialLink"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
+                <div id="socialLink"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                <div id="socialLink"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+              </div>
+              
+              
+              
+              
+
+              <br><br><br><br><br>
+          </div>
+    
+    </div>
+
+
+      <br><br>
+    </div>
+</section>
+
+
+
+
+
+<script src="javascripts/vendors/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<script src="script.js"></script>
+<script>
+    (function ($) {
+      "use strict";
+      // Auto-scroll
+      $('#myCarousel').carousel({
+        interval: 5000
+      });
+    
+      // Control buttons
+      $('.next').click(function () {
+        $('.carousel').carousel('next');
+        return false;
+      });
+      $('.prev').click(function () {
+        $('.carousel').carousel('prev');
+        return false;
+      });
+    
+      // On carousel scroll
+      $("#myCarousel").on("slide.bs.carousel", function (e) {
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 4;
+        var totalItems = $(".carousel-item").length;
+        if (idx >= totalItems - (itemsPerSlide - 1)) {
+          var it = itemsPerSlide -
+              (totalItems - idx);
+          for (var i = 0; i < it; i++) {
+            // append slides to end 
+            if (e.direction == "left") {
+              $(
+                ".carousel-item").eq(i).appendTo(".carousel-inner");
+            } else {
+              $(".carousel-item").eq(0).appendTo(".carousel-inner");
+            }
+          }
+        }
+      });
+    })
+    (jQuery);
+</script>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var navbar1 = document.getElementById("container");
+    
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+          navbar1.classList.add("sticky1");
+        } else {
+          navbar.classList.remove("sticky");
+          navbar1.classList.remove("sticky1");
+        }
+      }
+    
+    </script>
+</body>
+</html>

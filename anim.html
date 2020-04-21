@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anim</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:blueviolet;
+        }
+        .outer
+        {
+            width:22%;
+            height:80vh;
+            position:fixed;
+            background-color: white;
+            left:50%;
+            top:50%;
+            transform:translate(-50%, -50%);
+        }
+        .inner{
+            width:150px;
+            height:150px;
+            background-color: darkmagenta;
+            margin-left:27.5%;
+            margin-top:5%;
+            border-radius:5px;
+        }
+        .inner11{
+            position:fixed;
+            background-color: darkmagenta;
+            transition: .3s all;
+            width:100%;
+            height:80vh;
+            left:50%;
+            top:50%;
+            transform:translate(-50%, -50%);
+        }
+        .inner111{
+            width:150px;
+            height:150px;
+            background-color: darkmagenta;
+            border-radius:5px;
+        }
+        .inner:hover{
+            transition: .3s all;
+            transform: scale(1.1);
+        }
+        #dissable{
+            color:white;margin-left:10px;display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="outer">
+
+       <div class="row">
+            <div class="inner" id="inner1">
+                <a href="#" id="dissable"> X</a>
+   
+            </div>
+       </div>
+       <div class="row">
+            <div class="col-lg-6" id="inner">
+   
+            </div>
+       </div>
+       <div class="row">
+            <div class="col-lg-6" id="inner">
+   
+            </div>
+       </div>
+       
+       
+    </div>
+    </div>
+   
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#inner1").click(function(){
+            document.getElementById("inner1").className = "inner11";
+          //  $("#inner1").removeClass("inner");
+            //$("#inner1").addClass("inner11");
+            $("#dissable").css("display","block");
+            //element.classList.add("inner11");
+            //dissable.style.display = "block";
+        });     
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#dissable").click(function(){
+            if ( $("#inner1").hasClass('inner11') )
+            // document.getElementById("inner1").classList.toggle('class');
+           // document.getElementById("inner1").className = document.getElementById("inner1").className.replace( /(?:^|\s)inner11(?!\S)/g , '' )
+            //document.getElementById("inner1").className = "inner";
+           $("#inner1").removeClass("inner11");
+           
+            // element.classList.add("inner11");
+            // dissable.style.display = "block";
+        });
+    }); 
+</script>
+</body>
+</html>
